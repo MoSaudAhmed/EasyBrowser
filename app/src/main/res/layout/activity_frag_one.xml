@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_frag_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.mgdapps.easybrowser.FragOne">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_social_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Social Media"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_social_gridview"
+                android:layout_below="@id/tv_social_title"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_social_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_social_seemore"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_social_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:onClick="socialclicked"
+                android:textColor="#FFF"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_videosharing"
+                android:layout_below="@id/btn_social_seemore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Video Sharing"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_video_gridview"
+                android:layout_below="@id/tv_videosharing"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_video_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_videosharing"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_video_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="videosharinglicked"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_news"
+                android:layout_below="@id/btn_videosharing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="NEWS"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_news_gridview"
+                android:layout_below="@id/tv_news"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_news_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_news"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_news_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="newsclicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_shopping"
+                android:layout_below="@id/btn_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Shopping"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_shopping_gridview"
+                android:layout_below="@id/tv_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_shopping_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_shopping_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="shoppingclicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_mobilegames"
+                android:layout_below="@id/btn_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Android Market"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_mobilegames_gridview"
+                android:layout_below="@id/tv_mobilegames"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_mobilegames_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_mobilegames"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_mobilegames_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="mobilegamesClicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_cooking"
+                android:layout_below="@id/btn_mobilegames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Cooking"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_cooking_gridview"
+                android:layout_below="@id/tv_cooking"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_cooking_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+
+            <Button
+                android:id="@+id/btn_cooking"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_cooking_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="cookingClicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_health"
+                android:layout_below="@id/btn_cooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Health"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_health_gridview"
+                android:layout_below="@id/tv_health"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_health_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_health"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_health_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="healthClicked"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tv_sports"
+                android:layout_below="@id/btn_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Sports"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_sports_gridview"
+                android:layout_below="@id/tv_sports"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_sports_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_sports_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="sportsClicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_technology"
+                android:layout_below="@id/btn_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="Technology"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_technology_gridview"
+                android:layout_below="@id/tv_technology"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_technology_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_technology"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_technology_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:onClick="technologyClicked"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_reference"
+                android:layout_below="@id/btn_technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="References"
+                android:textColor="#3b5998"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <GridView
+                android:id="@+id/gv_reference_gridview"
+                android:layout_below="@id/tv_reference"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:columnWidth="90dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+
+                ></GridView>
+
+            <View
+                android:layout_below="@id/gv_reference_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#3b5998"
+                ></View>
+            <Button
+                android:id="@+id/btn_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/gv_reference_gridview"
+                android:background="#3b5998"
+                android:text="+ See More +"
+                android:textSize="20dp"
+                android:onClick="referenceclicked"
+                android:textColor="#FFF"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
